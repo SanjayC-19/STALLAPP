@@ -32,10 +32,7 @@ function App() {
               </>
             }
           />
-          <Route path="/non-veg-starters" element={<NonVegStarters />} />
-          <Route path="/veg-starters" element={<VegStarters />} />
-          <Route path="/soups" element={<Soups />} />
-          <Route path="/fish-seafood" element={<FishSeafood />} />
+          
         </Routes>
 
         {/* Footer remains on all pages */}

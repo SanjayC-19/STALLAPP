@@ -1,18 +1,24 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import NavbarImg from "../assets/Navbar.jpg";
+import "../index.css";
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-      <div className="container">
+      <div className="container d-flex justify-content-center align-items-center">
         {/* Logo */}
-        <a className="navbar-brand" href="#homesection">
+        <a className="navbar-brand me-auto" href="#homesection">
           <img
-            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png"
+            src={NavbarImg}
             className="food-munch-logo"
             alt="Food Munch Logo"
           />
         </a>
+
+        {/* Centered Brand Text */}
+        <div className="text-center flex-grow-1">
+          <h1 className="navbar-brand m-0">K-Square - Mark Antony</h1>
+        </div>
 
         {/* Mobile Toggle Button */}
         <button
@@ -33,9 +39,6 @@ function Navbar() {
             <a className="nav-link active" href="#wcuSection">
               Why Choose Us? <span className="visually-hidden">(current)</span>
             </a>
-            <a className="nav-link active" href="#FollowUs">Follow Us
-              <span className="visually-hidden">(current)</span>
-              </a>
           </div>
         </div>
       </div>
