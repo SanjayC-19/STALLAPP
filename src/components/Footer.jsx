@@ -8,6 +8,7 @@ function Footer() {
       <p className="footer-section-mail-id">Kavinraj: 63857 61876</p>
       <p className="footer-section-mail-id">Aswin: 99442 68095 </p>
       <p className="footer-section-address">Maharaja Auditorium Kongu Engineering College</p>
+      <p className="footer-section-address">Website build by <a href = "https://www.outliersunited.com/">Outliers United</a></p>
     </footer>
   );
 }

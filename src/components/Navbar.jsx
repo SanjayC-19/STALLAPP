@@ -2,6 +2,22 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavbarImg from "../assets/Navbar.jpg";
 import "../index.css";
+
+const GoogleFormButton = () => {
+  const formLink = "https://docs.google.com/forms/d/e/1FAIpQLSdlwnhxIrfp5GNtnZNYSLkzS8w7uPIZus09TZGRCUSQz-BaoQ/viewform?usp=header"; // Replace with your actual Google Form link
+
+  return (
+    <a
+      href={formLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="pre-order-button pre-margin px-6 py-3 text-white bg-gradient-to-r from-red-500 to-yellow-500 rounded-full hover:from-red-600 hover:to-yellow-600 transition duration-300 shadow-lg font-semibold text-lg tracking-wide border-2 border-white"
+    >
+      Pre Order
+    </a>
+  );
+};
+
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top">
@@ -20,7 +36,6 @@ function Navbar() {
           <h1 className="navbar-brand m-0">K-Square - Mark Antony</h1>
         </div>
 
-        {/* Mobile Toggle Button */}
         <button
           className="navbar-toggler"
           type="button"
@@ -36,9 +51,8 @@ function Navbar() {
         {/* Navbar Links */}
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav ms-auto">
-            <a className="nav-link active" href="#wcuSection">
-              Why Choose Us? <span className="visually-hidden">(current)</span>
-            </a>
+          <GoogleFormButton />
+           
           </div>
         </div>
       </div>
